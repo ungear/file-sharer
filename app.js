@@ -22,7 +22,6 @@ const server = http.createServer(function (req, res) {
         }
       }
 
-      res.appendHeader('Access-Control-Allow-Origin', '*');
       res.write(fileBuffer);
     } else{
       res.statusCode = 404;
